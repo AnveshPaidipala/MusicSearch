@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_borders">
+
+        <ImageView
+            android:layout_width="@dimen/img_width"
+            android:layout_height="@dimen/img_height"
+            android:id="@+id/albumImage"
+            android:layout_gravity="center_horizontal"
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/layout_borders" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/track_layout_left_margin"
+            android:layout_marginTop="@dimen/track_layout_top_margin"
+            android:layout_marginRight="@dimen/track_layout_right_margin"
+            android:layout_marginBottom="@dimen/track_layout_right_margin">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Track Name"
+                android:id="@+id/txtTrackName"
+                android:textColor="#ff000000" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/txtAlbumName"
+                android:layout_margin="@dimen/layout_borders"
+                android:textColor="#ff000000" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/txtArtistName"
+                android:layout_margin="@dimen/layout_borders"
+                android:textColor="#ff000000" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/txtLyrics"
+        android:layout_margin="@dimen/layout_borders"
+        android:textColor="#ff000000"
+        android:visibility="visible" />
+
+</LinearLayout>

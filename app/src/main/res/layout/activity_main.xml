@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom" tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/layout_borders">
+
+
+        <EditText android:imeOptions="actionSearch"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:inputType="text"
+            android:id="@+id/edit_query"
+            android:hint="@string/SearchText" />
+
+<!--
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/SearchText"
+            android:id="@+id/UserMessage"
+            android:layout_marginTop="@dimen/widget_adjustment_12dp" />
+
+
+        <SearchView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchQuery"
+            android:queryHint="@string/SearchText"/>-->
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listResults"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/layout_borders" />
+
+</LinearLayout>
